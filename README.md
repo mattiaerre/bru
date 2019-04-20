@@ -20,4 +20,6 @@ TODO: add description
 ➜  bru git:(master) ✗ npm run start:dev --prefix src/search
 
 ➜  bru git:(master) ✗ npm run start:dev --prefix src/start
+
+➜  bru git:(master) ✗ npm run start:dev --prefix src/zoolander
 ```
