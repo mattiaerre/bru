@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:dev": "PORT=3010 DEBUG=api:* nodemon index.js",
+    "start:dev": "PORT=3010 PORT_ZOOLANDER=4000 DEBUG=api:* nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,7 +12,9 @@
   "license": "MIT",
   "dependencies": {
     "debug": "^4.1.1",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "lokka": "^1.7.0",
+    "lokka-transport-http": "^1.6.1"
   },
   "devDependencies": {
     "nodemon": "^1.18.11"
