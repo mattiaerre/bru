@@ -7,6 +7,7 @@ const app = express();
 const proxyServer = httpProxy.createProxyServer();
 
 const {
+  PORT_API,
   PORT_BOOKING,
   PORT_GATE,
   PORT_PROFILE,
@@ -15,11 +16,14 @@ const {
 } = process.env;
 
 const µsites = {
+  api: PORT_API,
   booking: PORT_BOOKING,
   profile: PORT_PROFILE,
   search: PORT_SEARCH,
   start: PORT_START
 };
+
+app.use(express.static('public'));
 
 Object.keys(µsites).forEach(key => {
   app.get(`/${key}`, (req, res) => {

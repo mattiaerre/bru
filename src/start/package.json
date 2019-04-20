@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:dev": "PORT=3001 DEBUG=start:* nodemon index.js",
+    "start:dev": "PORT=3050 DEBUG=start:* nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,7 +12,8 @@
   "license": "MIT",
   "dependencies": {
     "debug": "^4.1.1",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "pug": "^2.0.3"
   },
   "devDependencies": {
     "nodemon": "^1.18.11"
