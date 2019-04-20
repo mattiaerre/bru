@@ -1,6 +1,12 @@
 # Bru
 
-## Commands
+TODO: add description
+
+## Ports
+
+[.env](src/gate/.env)
+
+## Scripts
 
 ```bash
 ➜  bru git:(master) ✗ npm run start:dev --prefix src/gate/
@@ -13,15 +19,3 @@
 
 ➜  bru git:(master) ✗ npm run start:dev --prefix src/booking/
 ```
-
-## Ports
-
-- 3000 gate
-
-- 3001 start page
-
-- 3002 search page
-
-- 3003 profile page
-
-- 3004 booking page
