@@ -15,5 +15,9 @@
     "eslint-plugin-import": "^2.17.2",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.12.4"
+  },
+  "dependencies": {
+    "lokka": "^1.7.0",
+    "lokka-transport-http": "^1.6.1"
   }
 }

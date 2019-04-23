@@ -1,0 +1,13 @@
+html
+  head
+    title= title
+    link(rel="stylesheet", href="css/style.css")
+  body
+    h1= title
+    h2= copy['Find your table for any occasion']
+    section
+      h1= copy['Popular restaurants in Hollywood']
+    section
+      h1= copy['Top Cuisines Near You']
+    input.page-type(type="hidden", value="start")
+    script(src="js/index.js")

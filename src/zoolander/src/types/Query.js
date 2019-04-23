@@ -1,23 +1,17 @@
 const { GraphQLObjectType, GraphQLString } = require('graphql');
+const getModel = require('../resolvers/getModel');
+const Model = require('./Model');
 
 const Query = new GraphQLObjectType({
   fields: {
-    message: {
-      resolve: () => 'ZOOLANDER',
-      type: GraphQLString
-    },
     model: {
       args: {
         q: {
           type: GraphQLString
         }
       },
-      resolve: (_, args) => args.q,
-      type: GraphQLString
-    },
-    title: {
-      resolve: () => 'TODO',
-      type: GraphQLString
+      resolve: getModel,
+      type: Model
     }
   },
   name: 'Query'
